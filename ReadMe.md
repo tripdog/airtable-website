@@ -10,6 +10,7 @@ Additionally, I will be using Express.js and PUG to serve the templates for
 the page. 
 
 I will record my learnings here:
-1. Learning
-2. Learning
-3. Learning
+1. Tailwind and Pug are certainly not a match made in heaven
+2. Need to learn about expressions in PUG
+3. Airtable is REALLY useful for the right project. 
+I hope I can use it for something someday.

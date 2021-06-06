@@ -8,13 +8,24 @@ app.set("views", path.join(__dirname, "."))
 
 //Now pull the data down from Airtable
 app.get("/", (req, res) => {
- (async () => {
-    const records = await base("Business Hours")
-      .select({ view: "Grid view" })
-      .firstPage()
+  if (records) {
+    console.log("cached")
     res.render("page", {
       records,
     })
-  })()
+  } else {
+    (async () => {
+      const records = await base("Business Hours")
+        .select({ view: "Grid view" })
+        .firstPage()
+      res.render("page", {
+        records,
+      })
+
+      setTimeout(() => {
+        records = null
+      }, 10 * 1000)
+    })()
+  }
 })
 app.listen(3000, ()=> console.log("Server is in good shape Captain!"))

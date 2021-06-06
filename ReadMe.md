@@ -14,3 +14,5 @@ I will record my learnings here:
 2. Need to learn about expressions in PUG
 3. Airtable is REALLY useful for the right project. 
 I hope I can use it for something someday.
+
+![alt text](https://github.com/tripdog/airtable-website/blob/master/screen-shot.jpg?raw=true)

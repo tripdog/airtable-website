@@ -7,6 +7,8 @@ app.set("view engine", "pug")
 app.set("views", path.join(__dirname, "."))
 
 //Now pull the data down from Airtable
+let records;
+
 app.get("/", (req, res) => {
   if (records) {
     console.log("cached")
@@ -16,7 +18,7 @@ app.get("/", (req, res) => {
   } else {
     (async () => {
       const records = await base("Business Hours")
-        .select({ view: "Grid view" })
+        .select({ view: "Grid view", })
         .firstPage()
       res.render("page", {
         records,

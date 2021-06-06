@@ -12,7 +12,9 @@ the page.
 I will record my learnings here:
 1. Tailwind and Pug are certainly not a match made in heaven
 2. Need to learn about expressions in PUG
-3. Airtable is REALLY useful for the right project. 
-I hope I can use it for something someday.
+3. Airtable is REALLY useful for the right project. I hope I can use it for something someday.
+4. I have a bad habit of trying to access variables before they get declared, 
+need to watch out for this. 
+
 
 ![alt text](https://github.com/tripdog/airtable-website/blob/master/screen-shot.jpg?raw=true)

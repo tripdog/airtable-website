@@ -1,3 +1,5 @@
+# A simple web page powered by Airtable DB
+
 The purpose of this project is to create a single page site that uses Airtable 
 as the database to store and retrieve data. In this case, Airtable has been
 chosen as a user-friendly solution for a non-technical client to interface
